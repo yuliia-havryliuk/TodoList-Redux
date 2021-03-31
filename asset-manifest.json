@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/homework-React2/static/css/main.383208a6.chunk.css",
-    "main.js": "/homework-React2/static/js/main.88a98864.chunk.js",
-    "main.js.map": "/homework-React2/static/js/main.88a98864.chunk.js.map",
-    "runtime-main.js": "/homework-React2/static/js/runtime-main.50afb856.js",
-    "runtime-main.js.map": "/homework-React2/static/js/runtime-main.50afb856.js.map",
-    "static/js/2.7b533243.chunk.js": "/homework-React2/static/js/2.7b533243.chunk.js",
-    "static/js/2.7b533243.chunk.js.map": "/homework-React2/static/js/2.7b533243.chunk.js.map",
-    "index.html": "/homework-React2/index.html",
-    "static/css/main.383208a6.chunk.css.map": "/homework-React2/static/css/main.383208a6.chunk.css.map",
-    "static/js/2.7b533243.chunk.js.LICENSE.txt": "/homework-React2/static/js/2.7b533243.chunk.js.LICENSE.txt"
+    "main.css": "/homework-TodoList/static/css/main.383208a6.chunk.css",
+    "main.js": "/homework-TodoList/static/js/main.88a98864.chunk.js",
+    "main.js.map": "/homework-TodoList/static/js/main.88a98864.chunk.js.map",
+    "runtime-main.js": "/homework-TodoList/static/js/runtime-main.0ff95172.js",
+    "runtime-main.js.map": "/homework-TodoList/static/js/runtime-main.0ff95172.js.map",
+    "static/js/2.7b533243.chunk.js": "/homework-TodoList/static/js/2.7b533243.chunk.js",
+    "static/js/2.7b533243.chunk.js.map": "/homework-TodoList/static/js/2.7b533243.chunk.js.map",
+    "index.html": "/homework-TodoList/index.html",
+    "static/css/main.383208a6.chunk.css.map": "/homework-TodoList/static/css/main.383208a6.chunk.css.map",
+    "static/js/2.7b533243.chunk.js.LICENSE.txt": "/homework-TodoList/static/js/2.7b533243.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.50afb856.js",
+    "static/js/runtime-main.0ff95172.js",
     "static/js/2.7b533243.chunk.js",
     "static/css/main.383208a6.chunk.css",
     "static/js/main.88a98864.chunk.js"
