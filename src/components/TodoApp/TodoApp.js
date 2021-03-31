@@ -15,27 +15,28 @@ class TodoApp extends Component {
     this.deleteTodo = this.deleteTodo.bind(this);
     this.changeFilter = this.changeFilter.bind(this);
     this.addTask = this.addTask.bind(this);
-    this.changeFilter = this.changeFilter.bind(this);
+    this.toggleCompleted = this.toggleCompleted.bind(this);
+    /*this.handleKeyDown = this.handleKeyDown.bind(this);*/
   }
   componentDidMount() {
     if (localStorage.getItem('todos')) {
       this.setState({ todos: JSON.parse(localStorage.getItem('todos')) });
     }
-    // window.addEventListener('keydown', this.handleKeyDown);
+    /*window.addEventListener('keydown', this.handleKeyDown);*/
   }
   componentDidUpdate(prevProps, prevState) {
     if (this.state.todos !== prevState.todos) {
       localStorage.setItem('todos', JSON.stringify(this.state.todos));
     }
   }
-  // componentWillUnmount() {
-  //   window.removeEventListener('keydown', this.handleKeyDown);
-  // }
-  // handleKeyDown = event => {
-  //   if (event.code === 'Enter') {
-  //     this.addTask(event.target.value);
-  //   }
-  // };
+  /*  componentWillUnmount() {
+    window.removeEventListener('keydown', this.handleKeyDown);
+  }
+  handleKeyDown = event => {
+    if (event.code === 'Enter') {
+      this.addTask(event.target.value);
+    }
+  };*/
   deleteTodo = todoId => {
     this.setState(prevState => ({
       todos: prevState.todos.filter(todo => todo.id !== todoId),
@@ -72,7 +73,7 @@ class TodoApp extends Component {
       todo.text.toLowerCase().includes(this.state.filter.toLowerCase()),
     );
     return (
-      <div>
+      <div className={style.container}>
         <h1 className={style.title}>Todo App</h1>
         <div className={style.todosInfo}>
           <p>Кількість задач: {this.state.todos.length}</p>

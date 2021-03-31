@@ -28,11 +28,14 @@ class TodoEditor extends Component {
           <textarea
             value={this.state.message}
             onChange={this.handelChange}
-            placeholder="Add task here"
+            placeholder="Введіть текст майбутньої таски..."
+          ></textarea>
+          <IconButton
+            type="submit"
+            onClick={this.addTask}
+            disabled={!this.state.message}
+            title="Введіть текст таски"
           >
-            {' '}
-          </textarea>
-          <IconButton type="submit" onClick={this.addTask}>
             Add Task
           </IconButton>
         </form>

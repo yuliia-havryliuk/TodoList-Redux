@@ -21,7 +21,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding-top: 10px;
   padding-bottom: 50px;
-  background-color: #ffdac4;
+  background-color: #ffede5;
 }
 
 a,
@@ -46,6 +46,7 @@ textarea {
   font-family: inherit;
   border: none;
   display: inline-block;
+  background-color: unset;
 }
 
 button:hover,

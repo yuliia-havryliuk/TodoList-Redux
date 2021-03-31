@@ -1,10 +1,18 @@
 import React from 'react';
+import style from './Filter.module.css';
 
-const Filter = ({ value, onChange }) => {
+const Filter = ({ value, onChange, changeMessage }) => {
   return (
-    <label htmlFor="">
+    <label>
       Фільтруй:
-      <input type="text" name="" id="" value={value} onChange={onChange} />
+      <input
+        type="text"
+        name=""
+        value={value}
+        onChange={onChange}
+        className={style.filter}
+        placeholder="Введіть літери..."
+      />
     </label>
   );
 };
