@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import style from './TodoEditor.module.css';
 import IconButton from '../../../templates/IconButton/IconButton';
+import { connect } from 'react-redux';
+import actions from '../../../redux/todoApp/todo-actions';
 
 class TodoEditor extends Component {
   constructor() {
@@ -32,7 +34,7 @@ class TodoEditor extends Component {
           ></textarea>
           <IconButton
             type="submit"
-            onClick={this.addTask}
+            // onClick={this.addTask}
             disabled={!this.state.message}
             title="Введіть текст таски"
           >
@@ -43,4 +45,11 @@ class TodoEditor extends Component {
     );
   }
 }
-export default TodoEditor;
+const mapStateToProps = state => ({
+  message: state.todos.message,
+});
+const mapDispatchToProps = dispatch => ({
+  onSubmit: message => dispatch(actions.addTodo(message)),
+  addMessage: message => dispatch(actions.addMessage(message)),
+});
+export default connect(mapStateToProps, mapDispatchToProps)(TodoEditor);
